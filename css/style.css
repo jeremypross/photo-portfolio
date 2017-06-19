@@ -14,11 +14,11 @@
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
     color: #818181;
     display: block;
+    font-size: 25px;
+    padding: 8px 8px 8px 35px;
+    text-decoration: none;
     transition: 0.3s
 }
 
@@ -42,6 +42,21 @@
     padding: 20px;
 }
 
+#nav-button {
+  background:none;
+  position: absolute;
+  top:0;
+  left:0;
+  line-height:65px;
+  padding:5px 15px 5px 15px;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:1;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {
@@ -53,7 +68,6 @@
 }
 
 
-/*==========================================*/
 * {
   font-family: 'Open Sans', sans-serif;
 }
@@ -61,6 +75,11 @@
 h1 {
   text-align: right;
   padding-right: 20px;
+}
+
+footer {
+  padding: 0 0 20px 0;
+  text-align: center;
 }
 
 .container-flex {
@@ -78,44 +97,10 @@ h1 {
 }
 
 #about-text {
-  margin: 25px 170px;
+  margin: 25px 140px;
 }
 
-#menu-button {
-  background:none;
-  position: absolute;
-  top:0;
-  left:0;
-  line-height:65px;
-  padding:5px 15px 5px 15px;
-  border:0;
-  font-size:1.4em;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:1;
-}
-
-#navbar {
-  width: 30%;
-}
-
-#navbar,ul,li,a {
-  color: black;
-  list-style-type: none;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  text-decoration: underline;
-}
-
-#navbar,ul {
-  padding: 0;
-}
-
-#content {
-  flex: 1;
-  height: 50px;
-  border: 1px dotted black;
-}
+/*referenced:
+https://codepen.io/g13nn/pen/eHGEF
+https://www.w3schools.com/howto/howto_js_sidenav.asp
+*/
