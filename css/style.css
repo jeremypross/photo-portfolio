@@ -1,0 +1,40 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 10px;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  margin: 5px;
+}
+
+.content {
+  border: 1px solid black;
+  position: fixed;
+  flex: 1;
+}
+
+#navbar,ul,li,a {
+  color: black;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#navbar,ul {
+  padding: 0;
+}
+
+#content {
+  flex: 1;
+  height: 50px;
+  border: 1px dotted black;
+}
