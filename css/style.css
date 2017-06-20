@@ -1,3 +1,40 @@
+* {
+  font-family: 'Muli', sans-serif;
+}
+
+h1 {
+  text-align: right;
+  padding-right: 20px;
+}
+
+footer {
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+
+.container-flex {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  margin: 5px;
+}
+
+#about {
+  text-align: center;
+}
+
+#about-text {
+  margin: 25px 140px;
+}
+
+/* NAV BAR */
+/* referenced:
+https://codepen.io/g13nn/pen/eHGEF
+https://www.w3schools.com/howto/howto_js_sidenav.asp
+*/
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -27,7 +64,7 @@
     color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
+/* Position and style the close button */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -57,50 +94,26 @@
   z-index:1;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {
-      padding-top: 15px;
-    }
-    .sidenav a {
-      font-size: 18px;
-    }
+/* MEDIA QUERY */
+@media(max-width: 768px) {
+  h1 {
+    font-size: 1.4em;
+    margin-top: 25px;
+    padding: 0 10px;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  .container-flex {
+    display: block;
+  }
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  #about-text {
+    margin: 5px 30px;
+  }
 }
-
-
-* {
-  font-family: 'Open Sans', sans-serif;
-}
-
-h1 {
-  text-align: right;
-  padding-right: 20px;
-}
-
-footer {
-  padding: 0 0 20px 0;
-  text-align: center;
-}
-
-.container-flex {
-  display: flex;
-  flex-direction: row;
-}
-
-.col {
-  flex: 1;
-  margin: 5px;
-}
-
-#about {
-  text-align: center;
-}
-
-#about-text {
-  margin: 25px 140px;
-}
-
-/*referenced:
-https://codepen.io/g13nn/pen/eHGEF
-https://www.w3schools.com/howto/howto_js_sidenav.asp
-*/

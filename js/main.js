@@ -1,3 +1,4 @@
+"use strict"
 document.addEventListener('DOMContentLoaded', function(){
   console.log('js is linked!');
 
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
   document.getElementById('close-btn').addEventListener('click', function(event){
     closeNav();
   });
+
 
 
 });
