@@ -1,5 +1,8 @@
 * {
   font-family: 'Muli', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 h1 {
@@ -8,8 +11,8 @@ h1 {
 }
 
 footer {
-  padding: 0 0 20px 0;
-  text-align: center;
+  padding: 0 25px 20px 0;
+  text-align: right;
 }
 
 .container-flex {
@@ -30,10 +33,6 @@ footer {
 }
 
 /* NAV BAR */
-/* referenced:
-https://codepen.io/g13nn/pen/eHGEF
-https://www.w3schools.com/howto/howto_js_sidenav.asp
-*/
 
 /* The side navigation menu */
 .sidenav {
@@ -94,6 +93,38 @@ https://www.w3schools.com/howto/howto_js_sidenav.asp
   z-index:1;
 }
 
+#nav-button:hover {
+  color: #818181;
+}
+
+
+/* IMAGE HOVER EFFECT */
+
+.image-wrapper {
+  position:relative;
+  height: 252px;
+  width: 252px;
+}
+
+.image-description {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.image-wrapper:hover .image-description {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* MEDIA QUERY */
 @media(max-width: 768px) {
   h1 {
@@ -117,3 +148,9 @@ https://www.w3schools.com/howto/howto_js_sidenav.asp
     margin: 5px 30px;
   }
 }
+
+/* referenced:
+https://codepen.io/g13nn/pen/eHGEF
+https://www.w3schools.com/howto/howto_js_sidenav.asp
+https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering
+*/
